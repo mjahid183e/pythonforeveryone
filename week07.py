@@ -7,21 +7,20 @@ while True:
         break
 
     try:
-        fnum = float(snum)
+        inum = int(snum)
     except:
         print("Invalid input")
         continue
 
     if largest is None:
-        largest = fnum
+        largest = inum
     if smallest is None:
-        smallest = fnum
+        smallest = inum
 
-    if fnum>largest:
-        largest = fnum
-
-    if fnum<smallest:
-         smallest = fnum
+    if inum>largest:
+        largest = inum
+    if inum<smallest:
+         smallest = inum
     
-print('Maximum', largest)
-print('Minimum', smallest)
+print('Maximum is', largest)
+print('Minimum is', smallest)
